@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{apacite}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}
+  {\settowidth}
+  {\setlength{\itemsep}{0pt plus 0.1pt}\settowidth}
+  {}{}
+\apptocmd{\thebibliography}
+  {\small}
+  {}{}
+
+
+
+\title{\vspace{-0cm}Black hole spectroscopy: prospects for testing the nature of black holes with gravitational wave observations
+}
+\author{Iara Naomi Nobre Ota}
+\date{}
+
+\begin{document}
+\maketitle 
+%The observations of gravitational waves provide new information about the nature and existence of very compact objects, in particular black holes. 
+The gravitational waveform of a binary black hole merger encodes information about the system, in particular, in the final stage of the waveform, the ringdown, the emitted gravitational wave can be described as a sum of quasinormal modes, which are characteristic modes of oscillation of the remnant black hole. 
+Therefore, the observation of the quasinormal mode spectrum is enough to determine the properties of the black hole remnant from a binary merger.
+Quasinormal modes are exponentially damped sinusoids and they are parametrized by three indices: the harmonic numbers $(\ell, m)$, which indicate the angular dependence of the mode, and the overtone index $n$, which indicates the lifetime of the mode, and the longest lived mode ($n=0$) is labeled fundamental mode and the overtones have larger indices ($n = 1, 2, 3, \ldots$).
+As a consequence of the no-hair theorem, astrophysical black holes are described only by two quantities: mass and spin. 
+The observation of a single quasinormal mode is enough to fully determine the black hole properties, however this kind of measurement relies on the assumption that the theory of General Relativity and the no-hair theorem are valid.
+
+Black hole spectroscopy proposes to test the no-hair theorem with the observation of multiple quasinormal modes. 
+A single quasinormal mode $(\ell, m, n)$ determines a pair of values for the mass and spin of the black hole, and another quasinormal mode $(\ell', m', n') \neq (\ell, m, n)$ also determines independently a pair of values for mass and spin. 
+The mass-spin pairs can be compared to check for compatibility, that is, the measurement of two or more quasinormal modes are used to verify whether the waveform is compatible with the gravitational wave emitted by a black hole.
+The  fundamental quadrupolar mode was already detected in several gravitational wave events, but, in additional to the dominant quasinormal mode, higher harmonics and overtones should be also present in the data.
+
+In this work we analyze the contribution of subdominant modes in the ringdown of binary black hole mergers and assess their detectability for current and future gravitational wave detectors.
+To look for the contribution of the first overtone in the ringdown of the quadrupolar mode we analyze numerical relativity simulations from the Simulating eXtreme Spacetimes project (SXS).
+We consider two methods, the first uses the waveform of the ringdown and the second uses the time derivative of the complex phase, and we then demonstrate the agreement between the methods, which guarantees the robustness of the analysis. 
+We show that the overtone has a non-negligible amplitude and, at a reference time $t_{\rm peak} + 10M$, where $t_{\rm peak}$ is the time of the peak of amplitude and $M$ is the total mass of the binary, its amplitude is larger than or comparable to the amplitude of the fundamental higher harmonics.
+
+For nonspinning circular binaries, the overtone contribution is more relevant for low mass ratio binaries while the harmonics are mostly negligible. For instance, in the equal mass case the ratio of the amplitude of the first overtone to the fundamental mode $(2,2,0)$ will be $\sim 0.65$, whereas the corresponding ratio for the higher harmonics will be $\lesssim 0.05$. For the high mass ratio case 10:1 the modes $(2,2,1)$, $(2,1,0)$ and $(3,3,0)$ have similar amplitude ratios $\sim 0.3$.
+Thus, our analysis shows that the overtone has an important contribution in the ringdown of binary black hole merger, especially for low mass ratio binaries, which are the kind of systems compatible of most of the events detected so far.
+
+Given the known contributions of the subdominant modes obtained in the numerical simulations analysis, we compute the \emph{black hole spectroscopy horizon}, which is the maximum distance, angle averaged over sky location and source inclination, up to which two or more quasinormal modes can be confidently detected in the ringdown of a binary black hole event.
+We consider the LIGO detector at design sensitivity, future ground-based detectors Cosmic Explorer (CE) and Einstein Telescope and the future space-based detector LISA.
+We first use the Rayleigh criterion, which is a resolvability condition for two modes, and guarantees the detection of a secondary mode with high significance.
+Given that the resolvability of the modes is not necessary for the detection of a subdominant mode, we propose the use of a conservative high Bayes factor threshold $\ln \mathcal{B} > 8$ that favors a two-mode model over a single-mode mode.
+This approach still ensures a high statistical evidence, but results in less restrictive horizons. 
+
+The two-mode horizons obtained have trends that are approximately independent of the chosen detectability criterion and the detectors.
+The difference between the Rayleigh criterion and the Bayes factor threshold is the distance of the horizon, as the Bayes factor horizons are more than approximately 5 times larger than the Rayleigh criterion horizon.
+The difference between the detectors is also the distance of the horizons, as future gravitational wave detectors will be more sensitive than the current LIGO detector at the design sensitivity. 
+LISA will also have horizons for different systems, as it will be sensitive to the miliHerz scale, it will detect the quasinormal modes of supermassive black holes.
+
+For the low mass ratio case 1.5:1, we found that the overtone has the largest horizon, followed by the $(3,3,0)$, $(4,4,0)$ and $(2,1,0)$ modes, respectively.
+We also found that, for the Cosmic Explorer detector and the Bayes factor analysis, most of the events detected until the O3a catalog are inside the overtone horizon and some are inside the $(3,3,0)$ mode horizon.
+However, all events are outside the LIGO horizons, which is compatible with the analyzed events, that have Bayes factors much smaller than our threshold.
+At the current estimated rates for heavy stellar mass binary black hole mergers, with primary masses between 45 and 100 solar masses, we expect an event rate of mergers within the overtone  horizon of $0.03 − 0.10 \ \mathrm{yr}^{-1}$ for LIGO at design sensitivity and $(0.6 − 2.4) \times 10^3 \ \mathrm{yr}^{-1}$ for the Cosmic Explorer.
+For the high mass ratio case 10:1, the $(3,3,0)$ and the $(4,4,0)$ modes have the largest horizons, and the overtone horizon is larger than the $(2,1,0)$ horizon.
+Therefore, the high frequency of the modes helps with the detectability, as the overtone and the $(2,1,0)$ modes have amplitudes comparable with the $(3,3,0)$ amplitude and larger than the amplitude of the $(4,4,0)$ mode.
+
+We also considered a more general case, where we assumed that the signal contains the most relevant quasinormal modes and computed the Bayes factor of a two-mode model, which allows any of the subdmoinant modes, over a single-mode model, and the Bayes factor of a three-mode model over a two-mode model.
+We found that the two-mode horizon is compatible with the largest horizon in the two-mode analysis and the three-mode model is more restrictive than the second largest horizon. 
+The later result is expected, as the Bayes factor penalizes complex models. 
+The general analysis is in agreement with the trends found in the two-mode analysis, either considering the Rayleigh criterion or the Bayes factor threshold.
+For the low mass ratio case the overtone is the secondary and the $(3,3,0)$ is the tertiary mode and for the high mass ratio case the secondary is the $(3,3,0)$ mode and the tertiary is the $(4,4,0)$ mode.
+
+Finally, we performed tests of the no hair theorem at the horizon distance. 
+We showed that at a distance outside the horizon and compatible with the GW190521 event, the secondary mode is highly uninformative and it is not possible to test the no-hair theorem, which is expected as the secondary mode is negligible at this distance.
+At the Bayes factor horizon and Rayleigh criterion horizons distances, the single-mode mode estimations for the mass and spin are biased, and the values estimated with the secondary mode are compatible with the values estimated with the dominant mode in the two-mode model. 
+The difference between the methods  is in the precision of the test, as the Rayleigh horizon is smaller.
+
+\end{document}
